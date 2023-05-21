@@ -1,4 +1,4 @@
-import Cmp, { doSomething } from './Component.js'
+import Cmp from './Component.js'
 
 console.log('Tooltip running')
 
@@ -10,7 +10,7 @@ export class Tooltip extends Cmp {
     this.create()
   }
 
-  closeTooltip = () => {
+  closeTooltip() {
     this.detach()
     this.closeNotifier()
   }

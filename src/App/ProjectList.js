@@ -1,14 +1,15 @@
 import { ProjectItem as PrjItem } from './ProjectItem.js'
 import * as DOMH from '../Utility/DOMHelper.js'
 
-const ProjectItem = 'abc'
+// const ProjectItem = 'abc'
 
 // console.log(DEFAULT_VALUE);
 
 export class ProjectList {
-  projects = []
+  // projects = []
 
   constructor(type) {
+    this.projects = []
     this.type = type
     const prjItems = document.querySelectorAll(`#${type}-projects li`)
     for (const prjItem of prjItems) {
