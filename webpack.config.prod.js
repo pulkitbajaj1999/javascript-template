@@ -1,3 +1,4 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -12,4 +13,5 @@ module.exports = {
     contentBase: './',
   },
   devtool: 'cheap-source-map',
+  plugins: [new CleanWebpackPlugin()],
 }
