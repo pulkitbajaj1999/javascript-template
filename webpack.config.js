@@ -9,6 +9,21 @@ module.exports = {
     path: path.resolve(__dirname, 'assets', 'scripts'),
     publicPath: 'assets/scripts/',
   },
+  // module is used for integrating babel support
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env', { targets: 'defaults' }]],
+          },
+        },
+      },
+    ],
+  },
   devServer: {
     contentBase: './',
   },

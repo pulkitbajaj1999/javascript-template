@@ -17,7 +17,13 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "ie 5-9"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^8.3.0",
     "clean-webpack-plugin": "3.0.0",
     "eslint": "^8.41.0",
     "eslint-config-standard": "^17.0.0",
@@ -29,6 +35,7 @@
     "webpack-dev-server": "3.11.3"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.21"
   }
 }
