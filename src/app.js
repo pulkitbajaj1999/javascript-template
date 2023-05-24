@@ -1,3 +1,5 @@
+import 'core-js/stable'
+
 import { ProjectList } from './App/ProjectList.js'
 globalThis.DEFAULT_VALUE = 'MAX'
 class App {
